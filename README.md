@@ -18,9 +18,9 @@ Port: 33678
 RPC Port: 33578
 
 
-BUILD LINUX (see the [Wiki](https://github.com/Ohmcoin/Ohmcoin/wiki/Unix-Build) for dependencies)
+BUILD LINUX
 -----------
-1) git clone https://github.com/Ohmcoin/Ohmcoin.git Ohmcoin
+1) git clone https://github.com/theohmproject/OhmCoin Ohmcoin
 
 2) cd Ohmcoin/src
 
@@ -38,9 +38,9 @@ BUILD LINUX (see the [Wiki](https://github.com/Ohmcoin/Ohmcoin/wiki/Unix-Build) 
 BUILD WINDOWS
 -------------
 
-1) Download Qt.zip from https://github.com/Ohmcoin/Ohmcoin/releases/tag/v1.0 and unpack to C:/
+1) Download Qt.zip from https://github.com/theohmproject/OhmCoin and unpack to C:/
 
-2) Download Ohmcoin source from https://github.com/Ohmcoin/Ohmcoin/archive/master.zip 
+2) Download Ohmcoin source from https://github.com/theohmproject/OhmCoin 
 
 2.1) Unpack to C:/Ohmcoin
 
