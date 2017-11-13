@@ -130,7 +130,7 @@ if (false )
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("198.50.214.61", "198.50.214.61"));
+        vSeeds.push_back(CDNSSeedData("198.50.214.61", "46.63.98.36"));
 
        
 
