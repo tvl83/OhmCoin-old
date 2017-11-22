@@ -20,17 +20,38 @@ RPC Port: 33578
 
 BUILD LINUX
 -----------
-1) git clone https://github.com/theohmproject/OhmCoin Ohmcoin
+`git clone https://github.com/theohmproject/OhmCoin`
 
-2) cd Ohmcoin/src
+#### Set up dependencies
+```
+sudo apt-get install -y software-properties-common
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev libdb4.8++-dev build-essential -y
+sudo apt-get install libtool autotools-dev automake pkg-config libssl-dev -y
+sudo apt-get install libevent-dev bsdmainutils libboost-all-dev libminiupnpc-dev -y
+```
 
-3) sudo make -f makefile.unix            # Headless Ohmcoin
+If you are setting this up on a VPS with less than 2GB of ram. Use this guide https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04 to set up a swap partition
 
-(optional)
+You need to add a folder to the obj folder so from the src folder `cd obj` and then `mkdir crypto`
 
-4) strip Ohmcoind
+`cd ..` so that you are in the `src` folder again.
 
-5) sudo cp Ohmcoind /usr/local/bin
+`cd leveldb` and then `chmod 755 *`
+This last command gives execute and read permissions to this whole folder which is required to use it during the building of the wallet executable.
+
+`cd ..` so that you are back in `src`
+
+`sudo make -f makefile.unix` # Headless Ohmcoin
+
+### Optional steps
+
+`strip Ohmcoind`
+
+this will let you run `ohmcoind` from any location
+
+`sudo cp ohmcoind /usr/local/bin`
 
 
 
